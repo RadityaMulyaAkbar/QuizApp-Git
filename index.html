@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Cdn Links dari fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/42f08511c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Start Quiz Button Start-->
+    <div class="start_btn">
+      <button>Start Quiz</button>
+    </div>
+    <!-- Start Quiz Button End -->
+
+    <!-- Info Box Start -->
+    <div class="info_box">
+      <div class="info_title">
+        <span>Rules</span>
+      </div>
+      <div class="info_list">
+        <div class="info">
+          1. You will have only <span>15 seconds</span> per each question.
+        </div>
+        <div class="info">
+          2. Once you select your answer, it can't be undone.
+        </div>
+        <div class="info">
+          3. You can't select any option once time goes off.
+        </div>
+        <div class="info">
+          4. You can't ecit from the Quix whule you're playing.
+        </div>
+        <div class="info">
+          5. You'll get points on the basis of your correct answers.
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Exit Quit</button>
+        <button class="restart">Continue</button>
+      </div>
+    </div>
+    <!-- Info Box End -->
+
+    <!-- Isi Quiz Box Start-->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Bagian ini sudah ke invert pertanyaannya lewat javascript -->
+            </div>
+            <div class="option_list">
+                <!-- Bagian ini sama seperti yang diawal -->
+            </div>
+        </section>
+
+        <!-- Footer Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Bagian ini udah di masukkan dan diatur di Java Script-->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+    <!-- Isi Quiz Box Ended-->
+
+    <!-- Result Box Start -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Resultnya udah diatur di javascript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quix</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <!-- Didalam javascript ini udah dimasukin pertanyaan dan opsinya -->
+    <script src="Js/question.js"></script>
+
+    <!-- Didalam javascript ini udah di coded semua Quiz Codesnya-->
+    <script src="Js/script.js"></script>
+  </body>
+</html>
